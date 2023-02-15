@@ -1506,7 +1506,7 @@ hr {
 }
 
 .video-section .video-part .embed-responsive-item {
-  background-image: url(../img/video.jpg);
+  background-image: url(../img/video.jpg);  /*TODO: add a thumbnail of the YouTube video 720x405 */
 }
 
 .video-section .video-part .embed-responsive-item:before {
