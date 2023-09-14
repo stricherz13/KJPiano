@@ -51,7 +51,6 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-            <!--            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>-->
             <li class="nav-item"><a class="nav-link" href="#lessons">Book a lesson</a></li>
             <li class="nav-item"><a class="nav-link" href="#payment">Online payment</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -63,8 +62,8 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center">
             <div class="col-12 col-lg-8 home-content text-center">
-                <h1 class="home-name">Becky <span>Lee</span></h1>
-                <h4 class="cd-headline clip home-headline">Pianist and Educator</h4>
+                <h1 class="home-name"><span data-i18n-key="name"></span></h1>
+                <h4 class="cd-headline clip home-headline" data-i18n-key="headline"></h4>
             </div>
         </div>
     </div>
@@ -72,8 +71,8 @@
         <!-- Languages list-->
         <div class="fixed-block block-left">
             <ul class="list-unstyled languages-list">
-                <li><a href="#0"><span class="single-language">ENG</span></a></li>
-                <li><a href="#0"><span class="single-language">한국어</span></a></li>
+                <li><a href="#0" onclick="switchLanguage('en')"><span class="single-language">ENG</span></a></li>
+                <li><a href="#0" onclick="switchLanguage('ko')"><span class="single-language">한국어</span></a></li>
             </ul>
         </div>
         <!-- Social media icons-->
@@ -564,6 +563,7 @@
 <script src="js/main.js"></script>
 <!-- Custom JS (Add your custom JS scripts to this file)-->
 <script src="js/custom.js"></script>
+<script src="js/translation.js"></script>
 </body>
 
 </html>
