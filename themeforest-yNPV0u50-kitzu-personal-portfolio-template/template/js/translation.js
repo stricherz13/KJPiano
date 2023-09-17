@@ -1,6 +1,7 @@
 // Localization data
 const translations = {
     en: {
+        title: "Becky Lee Pianist",
         name: "Becky Lee",
         headline: "Pianist and Educator",
         about: "About",
@@ -11,6 +12,7 @@ const translations = {
 
     },
     ko: {
+        title: "이경진 피아니스트",
         name: "이경진",
         headline: "피아니스트 및 교육자",
         about: "대해서",
@@ -28,25 +30,25 @@ switchLanguage(userLanguage);
 // Function to switch the language
 function switchLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n-key]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-i18n-key');
-        element.textContent = translations[lang][key];
-    });
+    if (lang === 'ko') {
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n-key');
+            element.textContent = translations[lang][key];
+        });
+    } else {
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n-key');
+            element.textContent = translations["en"][key];
+        });
+    }
 }
 
 // Function to determine the user's browser language
 function getUserBrowserLanguage() {
-    const userLanguage = navigator.language || navigator.userLanguage; // Get the user's browser language
-    const language = userLanguage.slice(0,2); // Get the first two characters of the language (e.g., "en" for "en-US"
-    // You may want to add logic here to map browser language codes to your available translations
-    console.log(language);
-    return language;
+    const userLanguage = navigator.language; // Get the user's browser language
+    return userLanguage.slice(0, 2); // Get the first two characters of the language (e.g., "en" for "en-US"
 }
 
-
-// You can also provide a way for the user to switch languages, e.g., by adding language buttons with event listeners.
-// For example, to switch to English:
 document.getElementById('switchToEnglish').addEventListener('click', () => switchLanguage('en'));
 
-// And to switch to Korean:
 document.getElementById('switchToKorean').addEventListener('click', () => switchLanguage('ko'));
