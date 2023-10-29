@@ -13,7 +13,12 @@ const translations = {
         aboutSelectionTitle: "About Me",
         aboutContentSubtitle: "Who am I?",
         aboutContentTitle: "I'm Becky Lee, a pianist and educator",
-        
+        aboutContentDescription1: "A graduate of Sunhwa Arts High School in Seoul, where she was taught by Mari        Kwon and Young-Bang Cho and received the Award for Excellence in        Performance, Lee holds a Bachelor of Music in Piano Performance from Yonsei         University. She studied there under the guidance of Keum-Bong Kim and      Jung-Hee Lee; she then pursued a Master of Music at University of Nevada Las Vegas (UNLV), studying with Timothy Hoft.",
+        aboutContentDescription2: "Becky currently serves as a Program Chair and a Master Class Chair, in Saint Louis Area Music Teachers Association (SLAMTA), and a District Audition Chair in Missouri Music ‘Teachers Association (MMTA).",
+        aboutContentDescription3: "Lee is also the owner of Donkey Music Lab, a private piano academy which provides lessons for students of any age or level. Because she began her own piano learning journey at age three, Lee is adept at teaching players at all stages, beginner to advanced. Students are sure to have an effective and enjoyable learning experience with Lee (who prefers to go by her first name, Becky). Every summer and winter, students have opportunities to present their skills at student recitals organized by Lee. They can also prepare with her for regional and national competitions each year.",
+              
+
+
 
 
     },
